@@ -1,0 +1,33 @@
+// 重置默认样式
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 文字溢出省略号
+.text-ellipsis-2 {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+//navbar导航条通用样式覆盖
+@nav-bar-background-color:#3CB371;
+@nav-bar-title-text-color: #ffffff;
+.van-nav-bar {
+  .van-nav-bar__arrow {
+    color:#ffffff ;
+  }
+  .van-nav-bar__title {
+    color: @nav-bar-title-text-color;
+  }
+  background-color: @nav-bar-background-color;
+}
+
+.van-grid-item {
+  border-radius: 8px; /* 设置圆角半径为8像素 */
+  /* 其他样式，如背景色、边框等，可以根据需要添加 */
+}
